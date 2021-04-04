@@ -1,15 +1,15 @@
-package lambdaTest.test;
+package tests;
 
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Allure;
-import lambdaTest.page.GitHubLambdaPage;
+import page.GitHubLambdaPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static data.Data.*;
+
 public class GitHubLambdaTest {
 
-    private final static String BASE_URL = "https://github.com/";
-    private final static String REPOSITORY = "eroshenkoam/allure-example";
 
     GitHubLambdaPage gitHubPage = new GitHubLambdaPage();
 

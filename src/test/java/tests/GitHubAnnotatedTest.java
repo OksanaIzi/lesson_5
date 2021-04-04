@@ -1,15 +1,15 @@
-package annotatedTests.test;
+package tests;
 
-import annotatedTests.page.GitHubAnnotatedPage;
+import page.GitHubAnnotatedPage;
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static data.Data.*;
+
 public class GitHubAnnotatedTest {
-    private final static String BASE_URL = "https://github.com/";
-    private final static String REPOSITORY = "eroshenkoam/allure-example";
-    GitHubAnnotatedPage gitHubAnnotatedPage = new GitHubAnnotatedPage();
+    GitHubAnnotatedPage gitHubAnnotatedPage=new GitHubAnnotatedPage();
 
     @BeforeAll
     static void setup() {

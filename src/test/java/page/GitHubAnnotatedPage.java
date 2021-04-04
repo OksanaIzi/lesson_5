@@ -1,4 +1,4 @@
-package annotatedTests.page;
+package page;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -13,6 +13,7 @@ public class GitHubAnnotatedPage {
     @Step("Открываем главную страницу {BASE_URL}")
     public void openPage(String BASE_URL){
         open(BASE_URL);
+        $(".HeaderMenu-link").shouldHave(text("Why GitHub?"));
     }
 
     @Step("Ищем и переходим в репозиторий {REPOSITORY}")
