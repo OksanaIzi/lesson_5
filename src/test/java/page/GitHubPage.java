@@ -1,17 +1,14 @@
-package selenide.page;
+package page;
 
-import com.sun.scenario.effect.impl.prism.PrImage;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static data.Data.*;
 
 public class GitHubPage {
-    private final static String BASE_URL = "https://github.com/";
-    private final static String REPOSITORY = "eroshenkoam/allure-example";
-
     public void openPage(){
         open(BASE_URL);
     }
